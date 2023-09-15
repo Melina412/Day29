@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: LibreBaskerville;
+  src: url("../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+section {
+  font-family: LibreBaskerville;
+  width: 50rem;
+}
+section h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+section form img {
+  width: 2rem;
+  height: 2rem;
+}
+section form label {
+  font-size: 2rem;
+}
+section form input {
+  width: 20rem;
+  height: 4rem;
+  font-size: 2.5rem;
+}
+section form select {
+  width: 22rem;
+  height: 4rem;
+  font-size: 2rem;
+  margin-bottom: 10rem;
+}
+section form button {
+  width: 20rem;
+  height: 4rem;
+}
+section .result {
+  margin-left: 10rem;
+  padding-top: 5rem;
+}
+section .result p {
+  font-size: 2rem;
+  padding: 0.2rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

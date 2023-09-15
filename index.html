@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinkgeldrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Trinkgeldrechner</h1>
+        <form onsubmit="return false">
+          <!-- - onsubmit="return false" verhindert das absenden des formulars beim ändern der input values. die if else startements werden nicht erneut erreicht und somit auch nicht angezeigt, wenn man den input ändert.  -->
+          <div>
+            <label for="billInput">Rechnungsbetrag</label>
+            <br />
+            <img src="./assets/img/euro-sign-solid.svg" alt="euro icon" />
+            <input
+              type="number"
+              step="0.01"
+              pattern="^\d+(\.\d{0,2})?$"
+              id="billInput"
+            />
+            <!-- pattern für eine zahl mit 0 bis 2 dezimalstellen -->
+          </div>
+
+          <div>
+            <label for="personsInput">Personenzahl</label>
+            <br />
+            <img
+              src="./assets/img/people-group-solid.svg"
+              alt="personen icon"
+            />
+            <input type="number" step="1" pattern="^\d+$" id="personsInput" />
+            <!-- pattern für eine ganze zahl ohne dezimalstellen -->
+          </div>
+
+          <label for="service"></label>
+          <select id="service" required>
+            <option value="">Wie war der Service?</option>
+            <option value="0.02">schlecht</option>
+            <option value="0.1">okay</option>
+            <option value="0.2">super</option>
+          </select>
+
+          <button type="submit" onclick="calculate()">
+            Trinkgeld berechnen
+          </button>
+        </form>
+        <div class="result">
+          <p id="resultTip"></p>
+          <p id="resultTotal"></p>
+          <p id="resultEach"></p>
+          <p id="invalid"></p>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
