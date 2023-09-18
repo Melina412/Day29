@@ -18,7 +18,10 @@ html {
   font-family: Fredoka;
   font-size: 62.5%;
   overflow: hidden;
-  background-color: rgb(125, 180, 200);
+  background-image: url("../img/marina-zaharkina-OGwLyoTncI8-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -133,7 +136,7 @@ footer {
 }
 
 .border {
-  border: 2px solid #000;
+  border: 2px solid rgb(250, 145, 33);
   border-radius: 2rem;
   box-shadow: 1px 1px 20px rgb(250, 145, 33), -1px 1px 20px rgb(250, 145, 33),
     -1px -1px 20px rgb(250, 145, 33), 1px -1px 20px rgb(250, 145, 33);
@@ -141,8 +144,5 @@ footer {
   height: 67rem;
   margin: 10% auto;
   position: relative;
-  background-image: url("../img/marina-zaharkina-OGwLyoTncI8-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(160, 200, 222);
 }
