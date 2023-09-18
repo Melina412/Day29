@@ -27,13 +27,24 @@ function calculate() {
     let total = bill + tip;
     let each = total / persons;
 
+    // * Icons
+    let tipIcon =
+      '<img src="./assets/img/zahlung.png"  alt="trinkgeld icon" style="width: 50px; height: 50px" />';
+    let sumIcon =
+      '<img src="./assets/img/buchhalter.png"  alt="gesamtpreis icon" style="width: 50px; height: 50px" />';
+    let individualPriceIcon =
+      '<img src="./assets/img/properson.png"  alt="preis icon" style="width: 50px; height: 50px" />';
+
     // * Ergebnis
     document.getElementById("resultTip").innerHTML =
-      "Das Trinkgeld beträgt " + tip.toFixed(2) + " €";
+      tipIcon + "<p> Trinkgeld: " + tip.toFixed(2) + " €</p>";
     document.getElementById("resultTotal").innerHTML =
-      "Die Gesamtsumme beträgt " + total.toFixed(2) + " €";
+      sumIcon + "<p> Gesamtsumme: " + total.toFixed(2) + " €</p>";
     document.getElementById("resultEach").innerHTML =
-      "Der Preis pro Person beträgt  " + each.toFixed(2) + " €";
+      individualPriceIcon +
+      "<p> Preis pro Person: " +
+      each.toFixed(2) +
+      " €</p>";
     document.getElementById("invalid").innerHTML = "";
     //
   } else {

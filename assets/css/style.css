@@ -8,54 +8,124 @@
   font-family: LibreBaskerville;
   src: url("../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
 }
+@font-face {
+  font-family: Fredoka;
+  src: url("../fonts/Fredoka/Fredoka-VariableFont.ttf");
+}
 html {
+  font-family: Fredoka;
   font-size: 62.5%;
+  overflow: hidden;
+  background-color: rgb(125, 180, 200);
 }
 
-section {
-  font-family: LibreBaskerville;
-  width: 50rem;
+main section {
+  width: 40rem;
+  margin: 0 auto;
 }
-section h1 {
-  font-size: 5rem;
+main section h1 {
+  font-size: 4.2rem;
   text-align: center;
   padding: 2rem 0;
 }
-section form {
+main section .icon-flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
-section form img {
-  width: 2rem;
-  height: 2rem;
+main section form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 2rem;
+  width: 30rem;
+  margin: 0 auto;
 }
-section form label {
+main section form img {
+  width: 5rem;
+  height: 5rem;
+}
+main section form div {
+  display: flex;
+  flex-direction: column;
+}
+main section form div label {
   font-size: 2rem;
+  padding: 0.5rem 0;
 }
-section form input {
-  width: 20rem;
-  height: 4rem;
-  font-size: 2.5rem;
+main section form div input {
+  height: 3.2rem;
+  font-size: 2rem;
+  color: grey;
 }
-section form select {
+main section form div #billInput {
+  width: 15rem;
+}
+main section form div #personsInput {
+  width: 10rem;
+}
+main section form div #service {
+  width: 18rem;
+}
+main section form div select {
   width: 22rem;
-  height: 4rem;
-  font-size: 2rem;
-  margin-bottom: 10rem;
+  height: 3.2rem;
+  font-size: 1.8rem;
+  color: gray;
 }
-section form button {
-  width: 20rem;
-  height: 4rem;
+main section button {
+  width: 14rem;
+  height: 6rem;
+  background-color: #fff;
+  font-family: Fredoka;
+  font-size: 1.8rem;
+  grid-column: 2/3;
+  margin-top: 1.5rem;
 }
-section .result {
-  margin-left: 10rem;
-  padding-top: 5rem;
+main section .output {
+  margin-left: 5rem;
+  padding-top: 3rem;
 }
-section .result p {
+main section .output .result {
   font-size: 2rem;
   padding: 0.2rem 0;
+  display: flex;
+  align-items: center;
+}
+main section .output .result img {
+  margin: 0.5rem 0;
+}
+main section .output .result p {
+  margin-left: 4rem;
+}
+main section .output #invalid {
+  font-size: 1.2rem;
+  color: crimson;
+  width: 30rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 6.5rem;
+}
+
+.border {
+  border: 2px solid #000;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 20px rgb(250, 145, 33), -1px 1px 20px rgb(250, 145, 33), -1px -1px 20px rgb(250, 145, 33), 1px -1px 20px rgb(250, 145, 33);
+  width: 43rem;
+  height: 67rem;
+  margin: 10% auto;
+  position: relative;
+  background-image: url("../img/marina-zaharkina-OGwLyoTncI8-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
